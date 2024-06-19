@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Card Game</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .card-display {
+            margin-bottom: 20px;
+        }
+        .card {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">War Card Game</h1>
+        <button id="deal-cards" class="btn btn-primary btn-lg">Deal Cards</button>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Player 1's Hand</h2>
+            <div id="player1-hand" class="card-display"></div>
+        </div>
+        <div class="col-md-6">
+            <h2>Player 2's Hand</h2>
+            <div id="player2-hand" class="card-display"></div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="war.js"></script>
+</body>
+</html>
