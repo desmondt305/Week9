@@ -6,7 +6,7 @@ class Card {
       this.faceValue = faceValue;
       this.value = value;
   }
-  //Methods are used for actions.
+  //Methods are used for actions. Prints out the face value of teh cards,.
   displayCard() {
       console.log(`${this.faceValue} of ${this.suit}`);
   }
@@ -40,10 +40,11 @@ class Deck {
       return hand;
   }
 }
-
+/* Creates a new  deck then shuffles it.*/ 
 let deck = new Deck();
 deck.shuffle();
 
+/* A event listener  is added using the  getElementById*/ 
 document.getElementById('deal-cards').addEventListener('click', () => {
     let deck = new Deck();
     deck.shuffle();
